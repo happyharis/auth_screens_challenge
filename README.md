@@ -14,7 +14,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to create a social media profile mobile screen and get it looking as close to the design as possible.
+Your challenge is to create authentication screens (login and signup) and get it looking as close to the design as possible.
 
 ## Getting Started
 
