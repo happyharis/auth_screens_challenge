@@ -1,6 +1,8 @@
 # Design 2 Flutter - Login and Signup Screen
 
-[Design preview for the Login Screen coding challenge](./assets/images/log_in.png) | [Design preview for the Sign Up Screen coding challenge](./assets/images/sign_up.png)
+![Design preview for the Login Screen coding challenge](./assets/images/log_in.png) ![Design preview for the Sign Up Screen coding challenge](./assets/images/sign_up.png)
+
+Design by [Mayowa Arowolo](https://www.behance.net/a9dezign)
 
 ## Hey there! 👋😁
 
@@ -24,7 +26,7 @@ Your challenge is to create a social media profile mobile screen and get it look
 ## Completion Levels
 
 Beginner - Completed Static screen (no interactive component)
-Advanced - Beginner + Have interactive components (tabs, links)
+Advanced - Beginner + Have interactive components (validation - errors when missing username & password, switch between screens)
 
 ## Suggestions
 
@@ -35,3 +37,8 @@ Advanced - Beginner + Have interactive components (tabs, links)
 ## Submitting your solution
 
 Submit your solution to the [Design2Flutter subreddit](https://www.reddit.com/r/Design2Flutter/).
+
+Tweet your work on Twitter with the tag [@Design2Flutter](https://twitter.com/Design2Flutter) and include the reddit post.
+
+Share on your LikedIn and tag [me](https://www.linkedin.com/in/haris-samingan-7889b9140/).
+
