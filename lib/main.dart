@@ -53,7 +53,6 @@ class SignUpScreen extends StatelessWidget {
               children: [
                 SizedBox(height: topPadding),
                 SizedBox(height: 10),
-                // SignUpImage(),
                 AnimatedImage(),
                 SizedBox(height: 5),
                 Text(
@@ -219,8 +218,9 @@ class _AnimatedImageState extends State<AnimatedImage>
   late final Animation<Offset> _offsetAnimation = Tween<Offset>(
     begin: Offset.zero,
     end: Offset(0, 0.08),
-  ).animate(_controller);
-  // .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+  )
+      // ).animate(_controller);
+      .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
 
   @override
   void dispose() {
