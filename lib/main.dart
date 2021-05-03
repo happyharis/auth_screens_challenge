@@ -63,15 +63,22 @@ class AnimatedImage extends StatefulWidget {
 
 class _AnimatedImageState extends State<AnimatedImage>
     with SingleTickerProviderStateMixin {
-  late final AnimationController _controller = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 3),
-  )..repeat(reverse: true);
+  AnimationController _controller;
+  Animation<Offset> _animation;
 
-  late final Animation<Offset> _animation = Tween<Offset>(
-    begin: Offset.zero,
-    end: Offset(0, 0.08),
-  ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 3),
+    )..repeat(reverse: true);
+
+    _animation = Tween<Offset>(
+      begin: Offset.zero,
+      end: Offset(0, 0.08),
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+  }
 
   @override
   void dispose() {
@@ -86,7 +93,7 @@ class _AnimatedImageState extends State<AnimatedImage>
         Image.asset('assets/images/clouds.png'),
         SlideTransition(
           position: _animation,
-          child: Image.asset('assets/images/rocket_person.png'),
+          child: Image.asset('assets/images/big_rocket_person.png', width: 282),
         ),
       ],
     );
