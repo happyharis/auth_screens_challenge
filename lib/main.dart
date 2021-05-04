@@ -218,9 +218,7 @@ class _AnimatedImageState extends State<AnimatedImage>
   late final Animation<Offset> _offsetAnimation = Tween<Offset>(
     begin: Offset.zero,
     end: Offset(0, 0.08),
-  )
-      // ).animate(_controller);
-      .animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
+  ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
 
   @override
   void dispose() {
